@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fridge Display</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #frame {
+            position: relative;
+            top: -120px;
+        }
+
+        .box {
+            width: 300px;
+            height: 100px; 
+            padding: 5px;
+        }
+
+        #fridge {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: -1; 
+        }
+
+        #fridgeImage {
+            width: 1000px;
+            height: 500px;
+        }
+        #power{
+            float: right;
+        }
+        #NETFLIX, #BROWSER {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: -2; 
+        }
+
+        .image {
+            width: 150px;
+            height: 150px;
+        }
+        #INSIDE{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: -2; 
+            width: 1000px;
+            height: 500px;
+
+        }
+    </style>
+
+</head>
+<body>
+
+<div id="frame" class="box">
+    <button id="power" onclick="power()">Power</button>
+    <div id="clock">The Current Time is </div>
+    <div id="temperatureDisplay">Temperature: 4°C</div>
+    <button id="netflixDisplay" onclick="toggleImage('NETFLIX')">Netflix</button>
+    <button id="browserDisplay" onclick="toggleImage('BROWSER')">Browser: </button>
+</div>
+<div id="fridge">
+    <img id="fridgeImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAYQshPVewmMz9VY8VhtsbzqNWOK1xZXJ9hQ&usqp=CAU">
+</div>
+<div id="NETFLIX">
+    <img class="image" src="https://aptokash.github.io/SD330-2/06-tv.jpg">
+</div>
+<div id="BROWSER">
+    <img class="image" src="https://aptokash.github.io/SD330-2/06-web.jpg">
+</div>
+<script>
+    function power() {
+        butPower = document.getElementById("power");
+        otherElements = document.querySelectorAll('.box > *:not(#power)');
+        if (butPower.style.backgroundColor === 'green') {
+            butPower.style.backgroundColor = 'red';
+            otherElements.forEach(function(element) {
+                element.style.display = 'none'; 
+            });
+        } else {
+            butPower.style.backgroundColor = 'green';
+            otherElements.forEach(function(element) {
+                element.style.display = 'block'; 
+            });
+        }
+    }
+
+    function toggleImage(id) {
+        image = document.getElementById(id);
+        if (image.style.zIndex === '-2') {
+            image.style.zIndex = '1';
+        } else {
+            image.style.zIndex = '-2';
+        }
+    }
+
+
+    function startTime() {
+        today = new Date();
+        h = today.getHours();
+        m = today.getMinutes();
+        s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('clock').innerHTML = "The Current Time is " + h + ":" + m + ":" + s;
+        setTimeout(startTime, 1000);
+    }
+
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};
+        return i;
+    }
+
+    startTime();
+</script>
+
+</body>
+</html>
