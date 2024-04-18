@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+<!--**********************************************************-->
+<body style =  "background: linear-gradient(to top,royalblue, rgb(59, 188, 239))">
+
+    <h2> E12- Richards (from Github)</h2>
+    <p>Bellow are my files</p>
+    <p id = 'files' style = "border: 2px solid black; border-radius: 5px;"></p>
+
+        
+    <script>
+        function githubFilelist(){
+                var htmlString = "";
+              // this creates JS object 'data' with a list of files  
+                  // change "aptokash/SD330" to your github id and repository name 
+                (async () => {
+                    const response = await fetch("https://api.github.com/repos/Tyler-Richards4321/SD330/contents/");
+                    const data = await response.json();
+                
+              // loop through the list of files, set "file" to each file name
+                    for (let file of data) {
+                        fname = file.name;           
+                        fpath = "https://Tyler-Richards4321.github.io/SD330/" + fname;  
+                        
+                        htmlString += "<p>" + "<a href = '" + fpath + "'</a>"; 
+                        htmlString += "<p>" + fname ;
+                    }
+                
+                document.getElementById('files').innerHTML = htmlString;
+                })()
+            
+            }
+            githubFilelist()
+    </script>
+</body>
+</html>
