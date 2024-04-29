@@ -1,0 +1,128 @@
+{
+    "lots":[
+        {
+            "name":"Foy",
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWKOUmvT7Uw3DcljUDGJ9pXr2-DqUe73_LHA&s",
+            "totalSpaces":10,
+            "Comments":"This Parking Lot is located by the Upper New and Foy Townhouses",
+            "students":false,
+            "spaces"[
+                {
+                "space":"01",
+                "handicap":true,
+                "status":"filled",
+                "secruity":true
+                },
+                {
+                "space":"02",
+                "handicap":true,
+                "status":"open",
+                "secruity":true                    
+                },
+                {
+                "space":"03",
+                "handicap":true,
+                "status":"open",
+                "secruity":true   
+                },
+                {
+                "Space":"04",
+                "handicap":false,
+                "status":"open",
+                "secruity":true   
+                },
+                {
+                "Space":"05",
+                "handicap":false,
+                "status":"open",
+                "secruity":true   
+                },
+                {
+                "Space":"06",
+                "handicap":false,
+                "status":"open",
+                "secruity":true   
+                },
+                {
+                "Space":"07",
+                "handicap":false,
+                "status":"open",
+                "secruity":true   
+                },
+                {
+                "Space":"08",
+                "handicap":false,
+                "status":"open",
+                "secruity":true   
+                },
+                {
+                "Space":"09",
+                "handicap":false,
+                "status":"open",
+                "secruity":true   
+                },
+                {
+                "Space":"10",
+                "handicap":false,
+                "status":"open",
+                "secruity":true   
+                },
+                {
+                "Space":"11",
+                "handicap":false,
+                "status":"open",
+                "secruity":true  
+                },
+                {
+                "Space":"12",
+                "handicap":false,
+                "status":"open",
+                "secruity":true  
+                }
+            ]
+        },
+        {
+            "name":"Allied Health",
+            "img":"https://www.google.com/imgres?q=Allied%20Health%20parking%20lot%20marist&imgurl=https%3A%2F%2Fwww.ramsa.com%2Fsites%2Fdefault%2Ffiles%2FA14021_2016A50.429.jpg&imgrefurl=https%3A%2F%2Fwww.ramsa.com%2Fprojects%2Fproject%2Fnatural-sciences-allied-health-building&docid=7cdLfVxDTxS07M&tbnid=j-h90oYbVbcglM&vet=12ahUKEwjK-cmMpeiFAxWfFlkFHfdnDWIQM3oECGwQAA..i&w=2400&h=1600&hcb=2&ved=2ahUKEwjK-cmMpeiFAxWfFlkFHfdnDWIQM3oECGwQAA",
+            "totalSpaces":7,
+            "comments":"This is the parking lot for Allied health",
+            "spaces":[]
+        },
+        {
+            "name":"Donnely",
+            "img":"https://www.google.com/imgres?q=Donnely%20parking%20lot%20marist&imgurl=https%3A%2F%2Fwww.planetware.com%2Fwpimages%2F2021%2F08%2Fnew-york-poughkeepsie-top-rated-things-to-do-visit-art-museum-walk-along-river-marist-college.jpg&imgrefurl=https%3A%2F%2Fwww.planetware.com%2Fnew-york%2Ftop-rated-things-to-do-in-poughkeepsie-us-ny-130.htm&docid=qo8HDEW3MhHbJM&tbnid=sKIThA358ItfVM&vet=12ahUKEwjsuLKipeiFAxWTEFkFHXXxBfcQM3oECFIQAA..i&w=730&h=487&hcb=2&ved=2ahUKEwjsuLKipeiFAxWTEFkFHXXxBfcQM3oECFIQAA",
+            "totalSpaces":15,
+            "comments":"This is the parking lot for Donnely",
+            "spaces":[]
+        },
+        {
+            "name":"Fontaine",
+            "img":"https://www.google.com/imgres?q=Fontaine%20parking%20lot%20marist&imgurl=https%3A%2F%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F594f72de20099e6f69c443e7%2Fb990cc57-5ec1-44d6-882f-8c49ec412629%2FFontaine%2BParking%2BSign%2B%25281%2529.JPG&imgrefurl=https%3A%2F%2Fwww.maristcircle.com%2Fhome%2F2022%2F9%2F22%2Fdoes-marist-have-a-parking-shortage&docid=HtCriQttfwfAMM&tbnid=gbvHWo-zm1tTCM&vet=12ahUKEwiUq8v9peiFAxV6F1kFHXP5CBoQM3oECGwQAA..i&w=2500&h=1875&hcb=2&ved=2ahUKEwiUq8v9peiFAxV6F1kFHXP5CBoQM3oECGwQAA",
+            "totalSpaces":9,
+            "comments":"This is the parking lot for Fontaine",
+            "spaces":[]
+        },
+        {
+            "name":"Lower West",
+            "img":"https://www.google.com/imgres?q=Lower%20West%20parking%20lot%20marist&imgurl=https%3A%2F%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F594f72de20099e6f69c443e7%2Fd76b10e4-1e03-48bd-b3b3-5277d9ccd325%2FLower%2BWest%2Bimage%2B1.jpg&imgrefurl=https%3A%2F%2Fwww.maristcircle.com%2Fhome%2F2022%2F10%2F20%2Fselective-lower-west-cedar-renovations-cause-confusion&docid=mV-etwMcNyQy0M&tbnid=KQSbzC-9qzA3RM&vet=12ahUKEwiL-duTpuiFAxWXMlkFHQqtBEgQM3oECDUQAA..i&w=2500&h=1875&hcb=2&ved=2ahUKEwiL-duTpuiFAxWXMlkFHQqtBEgQM3oECDUQAA",
+            "totalSpaces":10,
+            "comments":"This is the parking lot for Lower West",
+            "spaces":[]
+        },
+        {
+            "name":"Midrise",
+            "img":"https://www.google.com/imgres?q=Midrise%20parking%20lot%20marist&imgurl=https%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-s%2F0b%2F04%2F5b%2Fe1%2Fmid-rise-dorms-overlooking.jpg&imgrefurl=https%3A%2F%2Fwww.tripadvisor.com%2FLocationPhotoDirectLink-g48443-d2201901-i184835041-Marist_College-Poughkeepsie_New_York.html&docid=LH3dtTfhFUnSYM&tbnid=FJYkZ9fUbGmKTM&vet=12ahUKEwilpsKepuiFAxUVMlkFHRR7BdEQM3oECBQQAA..i&w=550&h=413&hcb=2&ved=2ahUKEwilpsKepuiFAxUVMlkFHRR7BdEQM3oECBQQAA",
+            "totalSpaces":25,
+            "comments":"This is the parking lot for Midrise",
+            "spaces":[]
+        },
+        {
+            "name":"Upper Fulton",
+            "img":"https://www.google.com/imgres?q=Upper%20Fulton%20marist&imgurl=https%3A%2F%2Fwww.marist.edu%2Fdocuments%2F86200%2F495661%2FFL2%2BOutside%2BNew.jpg%2Fddfd1870-f261-e8ce-acc5-3baa2732d93d%3Ft%3D1678205854428&imgrefurl=https%3A%2F%2Fwww.marist.edu%2Fstudent-life%2Fcampus%2Fhousing%2Fresidence%2Fnew-fulton&docid=kswYJi_ui_Iv9M&tbnid=pxrNpuLWPa-0xM&vet=12ahUKEwj88qLHpuiFAxVaNmIAHbErB_EQM3oECBMQAA..i&w=500&h=375&hcb=2&ved=2ahUKEwj88qLHpuiFAxVaNmIAHbErB_EQM3oECBMQAA",
+            "totalSpaces":20,
+            "comments":"This is the parking lot for Upper Fulton",
+            "spaces":[]
+        }
+
+    ]
+}
