@@ -6,7 +6,7 @@
             "totalSpaces":10,
             "Comments":"This Parking Lot is located by the Upper New and Foy Townhouses",
             "students":false,
-            "spaces"[
+            "spaces":[
                 {
                 "space":"01",
                 "handicap":true,
