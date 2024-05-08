@@ -27,6 +27,10 @@ a{
             border-radius: 5px;
             cursor: pointer;
         }
+p{
+    color:white;
+    font-size: large;
+}
 
 </style>
 
@@ -44,7 +48,21 @@ a{
 </div>
 
     <h1>Lower West</h1>
-
-
-
+    <div id="Lower WestLot"></div>
+<script>
+    fetch('https://tyler-richards4321.github.io/SD330/parking.json')
+    .then(response => response.json())
+    .then(data => {
+    const lowerWestParkingLot = data.lots.find(Lot => Lot.name === "Lower West");
+    if (lowerWestParkingLot) {
+      const lowerWest = document.getElementById('Lower WestLot');
+      lowerWest.innerHTML = `
+        <p>Total Spaces: ${lowerWestParkingLot.totalSpaces}</p>
+        <p>Comments: ${lowerWestParkingLot.comments}</p>
+        <p>Lot Img: ${lowerWestParkingLot.img}</p>
+      ;`
+    }
+  })
+    </script>
 </body>
+</html>

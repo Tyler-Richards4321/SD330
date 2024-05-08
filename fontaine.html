@@ -27,6 +27,10 @@ a{
             border-radius: 5px;
             cursor: pointer;
         }
+p{
+    color:white;
+    font-size: large;
+}
 
 </style>
 
@@ -43,4 +47,23 @@ a{
         <button onclick="window.location.href='404.html'">Registar</button>
         <button onclick="window.location.href='404.html'">Account</button>
     </div>
+    <div id="FontaineLot"></div>
+
+    <script>
+    fetch('https://tyler-richards4321.github.io/SD330/parking.json')
+    .then(response => response.json())
+    .then(data => {
+    const FontaineParkingLot = data.lots.find(Lot => Lot.name === "Fontaine");
+    if (FontaineParkingLot) {
+      const Fontaine = document.getElementById('FontaineLot');
+      Fontaine.innerHTML = `
+        <p>Total Spaces: ${FontaineParkingLot.totalSpaces}</p>
+        <p>Comments: ${FontaineParkingLot.comments}</p>
+        <p>Lot Img: ${FontaineParkingLot.img}</p>
+      `;
+    }
+  })
+
+    </script>
 </body>
+</html>

@@ -27,6 +27,10 @@ a{
             border-radius: 5px;
             cursor: pointer;
         }
+p{
+    color:white;
+    font-size: large;
+}
 
 </style>
 
@@ -34,7 +38,7 @@ a{
 </head>
 <body>
    <header><h1><a href="parking.html">Marist Parking App</a></h1></header>
-    <h1>Allied Health</h1>
+    <h1>Allied Health Parking Lot</h1>
     <div class="buttons">
         <button onclick="window.location.href='404.html'">Events</button>
         <button onclick="window.location.href='404.html'">Info</button>
@@ -43,4 +47,22 @@ a{
         <button onclick="window.location.href='404.html'">Registar</button>
         <button onclick="window.location.href='404.html'">Account</button>
     </div>
+    <div id="alliedLot"></div>
+<script>
+    fetch('https://tyler-richards4321.github.io/SD330/parking.json')
+    .then(response => response.json())
+    .then(data => {
+    const alliedParkingLot = data.lots.find(Lot => Lot.name === "Allied Health");
+    if (alliedParkingLot) {
+      const allied = document.getElementById('alliedLot');
+      allied.innerHTML = `
+        <p>Total Spaces: ${alliedParkingLot.totalSpaces}</p>
+        <p>Comments: ${alliedParkingLot.comments}</p>
+        <p>Lot Img: ${alliedParkingLot.img}</p>
+      `;
+    }
+  })
+
+</script>
 </body>
+</html>

@@ -18,7 +18,7 @@ a{
             top: 10px;
             right: 10px;
         }
-.buttons button {
+.buttons{
             background-color: white;
             color: darkred;
             border: none;
@@ -27,6 +27,14 @@ a{
             border-radius: 5px;
             cursor: pointer;
         }
+p{
+    color:white;
+    font-size: large;
+}
+h2{
+    color: white;
+    font-size: xx-large;
+}
 
 </style>
 
@@ -43,4 +51,55 @@ a{
         <button onclick="window.location.href='404.html'">Registar</button>
         <button onclick="window.location.href='404.html'">Account</button>
     </div>
+    <div id="FoyLot"></div>
+    <div id="FoySpaces"></div>
+
+<script>
+    fetch('https://tyler-richards4321.github.io/SD330/parking.json')
+    .then(response => response.json())
+    .then(data => {
+    const FoyParkingLot = data.lots.find(Lot => Lot.name === "Foy");
+    if (FoyParkingLot) {
+      const Foy = document.getElementById('FoyLot');
+      Foy.innerHTML = `
+        <p>Total Spaces: ${FoyParkingLot.totalSpaces}</p>
+        <p>Comments: ${FoyParkingLot.comments}</p>
+        <p>Lot Img: ${FoyParkingLot.img}</p>
+      `;
+    }
+  })
+  fetch('https://tyler-richards4321.github.io/SD330/parking.json')
+.then(response => response.json())
+.then(data => {
+    const FoyParkingLot = data.lots.find(Lot => Lot.name === "Foy");
+    if (FoyParkingLot) {
+        const Foy = document.getElementById('FoyLot');
+        Foy.innerHTML = `
+            <p>Total Spaces: ${FoyParkingLot.totalSpaces}</p>
+            <p>Comments: ${FoyParkingLot.comments}</p>
+            <p>Lot Img: <img src="${FoyParkingLot.img}"width="300"></p>
+        `;
+        const FoySpaces = document.getElementById('FoySpaces');
+        let spacesHTML = '<h2>Spaces Information:</h2>';
+        FoyParkingLot.spaces.forEach(space => {
+            spacesHTML += `
+                <p>Space: ${space.space}</p>
+                <p>Handicap: ${space.handicap ? 'Yes' : 'No'}</p>
+                <p>Security: ${space.security ? 'Yes' : 'No'}</p>
+                <p>Status: ${space.status}</p>
+                <hr>
+            `;
+        });
+
+        FoySpaces.innerHTML = spacesHTML;
+    }
+})
+
+
+
+
+
+
+</script>
 </body>
+</html>
